@@ -5,15 +5,16 @@ from subprocess import run
 import os
 
 
+
 class Converter:
     def __init__(self) -> None:
         self.kaomoji = "(｡>_<｡)b!"
         self.prefixForChrome = "file:\\\\\\"
         self.outFilename = 'output'
-        self.pdf = 'pdf'
-        self.html = 'html'
+        self.suffixPdf = 'pdf'
+        self.suffixHtml = 'html'
         self.destPdfFilename = 'output'
-        self.rawCommands = f"chrome.exe --headless --disable-gpu --no-sandbox --print-to-pdf={os.path.join(os.getcwd(),self.outFilename + '.' + self.pdf)} {self.prefixForChrome+os.path.join(self.prefixForChrome,os.getcwd(),self.destPdfFilename)+'.'+self.html}"
+        self.rawCommands = f"chrome.exe --headless --disable-gpu --no-sandbox --print-to-pdf={os.path.join(os.getcwd(),self.outFilename + '.' + self.suffixPdf)} {self.prefixForChrome+os.path.join(self.prefixForChrome,os.getcwd(),self.destPdfFilename)+'.'+self.suffixHtml}"
         print(self.rawCommands)
 
     def ask_filePath(self):
@@ -25,13 +26,15 @@ class Converter:
     def set_mdFilePath(self, filepath: str):
         pass
 
-    def do(self):
+    def htmlToPdf(self):
         run(self.rawCommands.split(' '))
+
+    def mdToHtml(self):
+        pass
 
 
 def main():
-    a = Converter()
-    a.do()
+    pass
 
 
 if __name__ == '__main__':
