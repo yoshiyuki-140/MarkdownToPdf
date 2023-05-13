@@ -67,3 +67,5 @@ if __name__ == '__main__':
     convert_html_to_pdf(html_tmp, output_file_pdf)
 
     print(f"Converted : \n from {os.path.abspath(html_tmp)} \n to {os.path.abspath(output_file_pdf)}")
+    # 最後に中間ファイルとして作ったhtmlを削除する.
+    os.remove(html_tmp)
