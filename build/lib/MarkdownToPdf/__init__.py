@@ -1,1 +1,1 @@
-from myMarkdownToPdf.myMarkdownTopdf import *
+from MarkdownToPdf.converter import *
