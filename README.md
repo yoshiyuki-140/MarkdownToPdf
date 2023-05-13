@@ -3,29 +3,25 @@
 
 ## 必要なもの
 - Python 3
-- Google Chrome
+- Google Chrome(パスを通すこと!)
 ## インストール方法
 1. 以下のコマンドを実行してください。(pipが使えることを確認してください)  
     ```
+    pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf
     ```
 
 2. ```pip install -r requirements.txt```を実行して、必要なPythonパッケージをインストールしてください。
 ## 使い方
-次のコマンドを実行して、MarkdownファイルをPDFに変換します。
+1. 次のコマンドを実行して、MarkdownファイルをPDFに変換します。
 
 ```python
-python converter.py input_file.md
+# <input_file>には変換したいファイルの名前が入る
+python converter.py <input_file>.md
 ```
 変換されたPDFファイルは、入力ファイルの拡張子が.mdから.pdfに変更されたファイル名で保存されます。
-実行時におまけでhtmlも生成します。
-
 変換されたHTMLファイルは、入力ファイルの拡張子が.mdから.htmlに変更されたファイル名で保存されます。
 
-## !オプション
---html: HTMLに変換します。このオプションが指定されていない場合は、PDFに変換します。
-対応しているMarkdown拡張機能
-このコンバーターは、次のMarkdown拡張機能をサポートしています。
-
+## このコンバーターは、次のMarkdown拡張機能をサポートしています。
 - tables
 - extra
 - abbr
@@ -49,3 +45,7 @@ python converter.py input_file.md
 - このアプリケーションは、Google Chromeがインストールされている必要があります。
 - このアプリケーションは、入力ファイルが存在しない場合、または変換中にエラーが発生した場合、エラーメッセージを表示しますが、プログラムは終了しません。
 - このアプリケーションは、現在サポートされているpython-Markdown拡張機能以外の機能をサポートしていません。
+
+## 今後
+
+
