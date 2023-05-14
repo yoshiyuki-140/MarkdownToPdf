@@ -3,7 +3,6 @@
 import sys
 import os
 import markdown
-from pprint import pprint
 from subprocess import run
 
 
@@ -41,6 +40,8 @@ def convert_markdown_to_html(input_file: str, output_file: str):
 
 
 def convert_html_to_pdf(input_file: str, output_file: str):
+    # you can reference 
+    # chrome headless mode document : https://developer.chrome.com/blog/headless-chrome/
     command = f"chrome.exe --headless --disable-gpu --no-sandbox --print-to-pdf={os.path.abspath(output_file)} {os.path.abspath(input_file)}"
     run(command)
 
