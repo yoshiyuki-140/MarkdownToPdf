@@ -1,18 +1,16 @@
-# MarkDownToPdf(my version)
+# MarkDownToPdf (My Version)
 
 ## Approach
-
-First, I convert markdown to html by useing python-markdown.<br>
-Next, I activate "Chrome headless mode" for converting html to pdf.<br>
-Finally, this package can convert markdown to pdf.<br>
+First, I convert Markdown to HTML using python-markdown.
+Next, I activate "Chrome headless mode" to convert HTML to PDF.
+Finally, this package can convert Markdown to PDF.
 
 ## Setup
+You should install Git, Python, and the Chrome browser.
+Additionally, you need to provide the path to "chrome.exe".
+Finally, execute the following command in PowerShell or Bash:
 
-You should install git, python and chrome browser.<br>
-In addition, you need to pass the path to "chrome.exe"<br>
-Finally, you need to execute following command in powershell or bash.<br>
-
-```powershell
+```bash
 git clone https://github.com/yoshiyuki-140/MarkdownToPdf.git
 python -m pip install --upgrade pip
 pip install -r requirements.txt
@@ -20,5 +18,4 @@ pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
 ```
 
 ## Warning
-
-OS : Windows
+Operating System: Windows
