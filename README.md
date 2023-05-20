@@ -13,6 +13,7 @@ Finally, execute the following command in PowerShell or Bash.<br>
 ```bash
 git clone https://github.com/yoshiyuki-140/MarkdownToPdf.git
 python -m pip install --upgrade pip
+cd MarkdownToPdf
 pip install -r requirements.txt
 pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
 ```
