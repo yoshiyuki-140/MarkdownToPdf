@@ -90,3 +90,4 @@ if __name__ == '__main__':
         sys.exit()
 
     convert_markdown_to_pdf(sys.argv[1])
+
