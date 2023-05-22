@@ -11,11 +11,20 @@ Additionally, you need to provide the path to "chrome.exe".<br>
 Finally, execute the following command in PowerShell or Bash.<br>
 
 ```bash | powershell
-git clone https://github.com/yoshiyuki-140/MarkdownToPdf.git
-python -m pip install --upgrade pip
-cd MarkdownToPdf
-pip install -r requirements.txt
 pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
+```
+
+## Example
+
+```py
+from MarkdownToPdf import *
+
+convert_markdown_to_html("inputFilePath.md","outputFilePath.html")
+convert_html_to_pdf("inputFilePath.html","outputFilePath.pdf")
+
+# Or, If you want to do. direct convert markdown to pdf. execute following code
+
+
 ```
 
 ## Warning
