@@ -46,7 +46,7 @@ def convert_html_to_pdf(input_file: str, output_file: str):
     run(command)
 
 
-def convert_markdown_to_pdf(input_file: str, output_file: str = None, removeHtmlTmp=True):
+def convert_markdown_to_pdf(input_file: str, output_file: str = None, removeHtmlTmp=True, extCheck=False):
     # 変換するときの中間ファイルとしてhtmlを生成するんだけど、このhtmlファイルを消したくなかったら、
     # 上に書いてあるremoveHtmlTmp引数をFalseにしてね!
     # ファイルの存在確認
@@ -54,7 +54,11 @@ def convert_markdown_to_pdf(input_file: str, output_file: str = None, removeHtml
         print(f"Error: {input_file} does not exist or is not a file.")
         sys.exit()
 
+
     without_extension = os.path.splitext(os.path.basename(input_file))[0]
+    print(without_extension)
+    if extCheck and os.path.splitext(os.path.basename(input_file))[-1] != '.md':
+        raise FileNotFoundError("File extension must be .md")
 
     if output_file == None:
         convert_markdown_to_html(input_file, without_extension+'.html')
@@ -68,7 +72,8 @@ def convert_markdown_to_pdf(input_file: str, output_file: str = None, removeHtml
             print(f"Error: {output_file} does not exist or is not a file.")
             sys.exit()
         convert_markdown_to_html(input_file, without_extension + '.html')
-        convert_html_to_pdf(without_extension + '.html',output_file) 
+        convert_html_to_pdf(without_extension + '.html', output_file)
+
 
 if __name__ == '__main__':
     # 以下のコードは,
