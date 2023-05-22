@@ -38,9 +38,11 @@ class Application(tk.Frame):
         convert_markdown_to_pdf(filepath)
         self.message['text'] = f"Converted:\nFrom:\n{Path(filepath).stem + '.md'}\nTo:\n{Path(filepath).stem + '.pdf'}\n All Process Success!"
 
-root = tk.Tk()
-root.title("MarkDownToPdf")
-root.geometry("420x320")
-app = Application(root=root)
-app.pack(expand=True)
-app.mainloop()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    root.title("MarkDownToPdf")
+    root.geometry("420x320")
+    app = Application(root=root)
+    app.pack(expand=True)
+    app.mainloop()

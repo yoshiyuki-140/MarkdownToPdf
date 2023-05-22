@@ -1,5 +1,6 @@
 README.md
 setup.py
+MarkdownToPdf/GUIWrapper.py
 MarkdownToPdf/__init__.py
 MarkdownToPdf/converter.py
 MarkdownToPdf.egg-info/PKG-INFO
