@@ -22,9 +22,10 @@ from MarkdownToPdf import *
 convert_markdown_to_html("inputFilePath.md","outputFilePath.html")
 convert_html_to_pdf("inputFilePath.html","outputFilePath.pdf")
 
+
 # Or, If you want to do. direct convert markdown to pdf. execute following code
 
-
+convert_markdown_to_pdf("inputFilePath.md")
 ```
 
 ## Warning
