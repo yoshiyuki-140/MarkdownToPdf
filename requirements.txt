@@ -76,8 +76,6 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.9.1
 pydantic==1.10.5
-pygame==2.1.2
-pygame-textinput @ git+https://github.com/DYGV/pygame_textinput.git@590aaa6e1d129df63934d179d9deb19d42b5b257
 pygls==1.0.1
 Pygments==2.6.1
 pylint==2.16.3

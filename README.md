@@ -10,7 +10,7 @@ You should install Git, Python, and the Chrome browser.<br>
 Additionally, you need to provide the path to "chrome.exe".<br>
 Finally, execute the following command in PowerShell or Bash.<br>
 
-```bash
+```bash | powershell
 git clone https://github.com/yoshiyuki-140/MarkdownToPdf.git
 python -m pip install --upgrade pip
 cd MarkdownToPdf
