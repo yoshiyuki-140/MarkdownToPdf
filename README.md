@@ -5,7 +5,7 @@
 次に,chromeヘッドレスモードを使用して,先ほど作成したhtmlファイルからpdfに変換します<br>
 最終的に,以上のプロセスを行うことで,htmlファイルからpdfファイルに変換します<br>
 
-## Setup
+## セットアップ
 まず,Git,Python,Chromeブラウザーをインストールする必要があります。<br>
 加えて,chromeブラウザーの実行ファイルである"chrome.exe"にパスを通す必要があります。<br>
 最後に,以下のコマンドをPowershellかBashで実行してください。
@@ -14,7 +14,7 @@
 pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
 ```
 
-## Example
+## 使用方法
 
 以下に示すのは,このパッケージの具体的な使用方法です。
 
@@ -40,5 +40,6 @@ convert_markdown_to_pdf("inputFilePath.md")
 
 ```
 
-## Warning
-Operating System: Windows
+## 注意
+筆者(開発者＆管理者)のOS(オペレーティングシステム)は Windowsです。
+Bash ScriptとUbuntuの使用方法はかじっていますが、あまり自信があるほうではありません。悪しからず.
