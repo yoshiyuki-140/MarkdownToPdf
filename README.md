@@ -1,14 +1,14 @@
 # MarkDownToPdf (My Version)
 
-## Approach
-First, I convert Markdown to HTML using python-markdown.<br>
-Next, I activate "Chrome headless mode" to convert HTML to PDF.<br>
-Finally, this package can convert Markdown to PDF.<br>
+## アプローチ
+初めに,python-markdownを使用することによって,markdownからhtmlに変換する.<br>
+次に,chromeヘッドレスモードを使用して,先ほど作成したhtmlファイルからpdfに変換します<br>
+最終的に,以上のプロセスを行うことで,htmlファイルからpdfファイルに変換します<br>
 
 ## Setup
-You should install Git, Python, and the Chrome browser.<br>
-Additionally, you need to provide the path to "chrome.exe".<br>
-Finally, execute the following command in PowerShell or Bash.<br>
+まず,Git,Python,Chromeブラウザーをインストールする必要があります。<br>
+加えて,chromeブラウザーの実行ファイルである"chrome.exe"にパスを通す必要があります。<br>
+最後に,以下のコマンドをPowershellかBashで実行してください。
 
 ```bash | powershell
 pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
@@ -16,17 +16,29 @@ pip install git+https://github.com/yoshiyuki-140/MarkdownToPdf.git
 
 ## Example
 
+以下に示すのは,このパッケージの具体的な使用方法です。
+
 ```py
 from MarkdownToPdf import *
 
+# convert_markdown_to_htmlメソッドは,markdownからhtmlに変換するという機能を提供します。
 convert_markdown_to_html("inputFilePath.md","outputFilePath.html")
+
+# convert_html_to_pdfメソッドは,htmlからpdfに変換する機能を提供します。
 convert_html_to_pdf("inputFilePath.html","outputFilePath.pdf")
 
-# If you want to directly convert from markdown to pdf. You can execute following code
+# もし,直接的にmarkdownからpdfを変換したかったら,以下のように実行してください。
+# この場合、中間ファイルとして作成された、htmlファイルは消去されます。
 
 convert_markdown_to_pdf("inputFilePath.md")
+
+# もし、消去されたくなければ、convert_markdown_to_pdfメソッドのremoveHtmlTmp引数をFalseに指定してください。
+# 例：
+# >>> convert_markdown_to_pdf("inputFilePath.md",removeHtmlTmp=False)
+# 
+
+
 ```
 
 ## Warning
 Operating System: Windows
-
