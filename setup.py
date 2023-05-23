@@ -4,9 +4,15 @@
 
 from setuptools import setup, find_packages
 
+my_email = "moyashikuro1225@gmail.com"
+
 setup(
     name='MarkdownToPdf',
-    version='1.1',
-    packages=find_packages()
+    author="Yoshiyuki Kurose",
+    author_email=my_email,
+    maintainer="Yoshiyuki Kurose",
+    maintainer_email=my_email,
+    version='1.2',
+    packages=find_packages(),
+    license="https://github.com/yoshiyuki-140/MarkdownToPdf/blob/master/LICENSE"
 )
-
