@@ -42,7 +42,7 @@ convert_markdown_to_pdf("inputFilePath.md")
 
 ## 注意
 筆者(開発者＆管理者)のOS(オペレーティングシステム)は Windowsです.<br>
-Bash ScriptとUbuntuはかじっていますが,あまり自信があるほうではありません.悪しからず.
+Bash ScriptとUbuntuはかじっていますが,あまり自信はありません.悪しからず.
 
 
 ## Where is English version Doc?
