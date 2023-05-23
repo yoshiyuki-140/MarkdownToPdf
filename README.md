@@ -43,3 +43,7 @@ convert_markdown_to_pdf("inputFilePath.md")
 ## 注意
 筆者(開発者＆管理者)のOS(オペレーティングシステム)は Windowsです。
 Bash ScriptとUbuntuの使用方法はかじっていますが、あまり自信があるほうではありません。悪しからず.
+
+
+## Where is English version Doc?
+English version is [here](https://github.com/yoshiyuki-140/MarkdownToPdf/blob/master/README_en.md)
